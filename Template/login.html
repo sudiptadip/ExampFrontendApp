@@ -1,0 +1,1000 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              surface: "#f8f9ff",
+              "inverse-primary": "#bec6e0",
+              "secondary-container": "#fd651e",
+              "secondary-fixed": "#ffdbce",
+              "primary-fixed-dim": "#bec6e0",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#0b1c30",
+              secondary: "#a73a00",
+              "surface-variant": "#d3e4fe",
+              "error-container": "#ffdad6",
+              primary: "#000000",
+              "inverse-surface": "#213145",
+              "surface-container-highest": "#d3e4fe",
+              "tertiary-fixed-dim": "#4edea3",
+              "surface-container": "#e5eeff",
+              "primary-fixed": "#dae2fd",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#7c839b",
+              "inverse-on-surface": "#eaf1ff",
+              "on-surface": "#0b1c30",
+              "surface-tint": "#565e74",
+              "surface-dim": "#cbdbf5",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#eff4ff",
+              "primary-container": "#131b2e",
+              "on-secondary-container": "#571a00",
+              "on-tertiary-fixed-variant": "#005236",
+              "on-error-container": "#93000a",
+              "on-tertiary-container": "#009668",
+              "tertiary-fixed": "#6ffbbe",
+              "secondary-fixed-dim": "#ffb599",
+              background: "#f8f9ff",
+              "on-primary-fixed-variant": "#3f465c",
+              "outline-variant": "#c6c6cd",
+              error: "#ba1a1a",
+              "on-secondary-fixed": "#370e00",
+              "on-primary-fixed": "#131b2e",
+              "tertiary-container": "#002113",
+              "surface-bright": "#f8f9ff",
+              "on-tertiary-fixed": "#002113",
+              tertiary: "#000000",
+              "on-secondary-fixed-variant": "#7f2b00",
+              "on-error": "#ffffff",
+              "surface-container-high": "#dce9ff",
+              "on-tertiary": "#ffffff",
+              "on-surface-variant": "#45464d",
+              outline: "#76777d",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "spacing-xs": "0.5rem",
+              "spacing-sm": "0.75rem",
+              "spacing-2xs": "0.25rem",
+              "gutter-tablet": "1.5rem",
+              "container-max": "80rem",
+              "gutter-mobile": "1rem",
+              "spacing-xl": "2rem",
+              "spacing-2xl": "3rem",
+              "spacing-lg": "1.5rem",
+              "gutter-desktop": "1.5rem",
+              "spacing-md": "1rem",
+            },
+            fontFamily: {
+              "display-lg-mobile": ["Plus Jakarta Sans"],
+              "body-md": ["Plus Jakarta Sans"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "headline-xl-mobile": ["Plus Jakarta Sans"],
+              "label-md": ["Plus Jakarta Sans"],
+              "display-lg": ["Plus Jakarta Sans"],
+              "metric-digit": ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "label-xs": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "title-md": ["Plus Jakarta Sans"],
+              "headline-xl": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "display-lg-mobile": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+              "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }],
+              "headline-xl-mobile": [
+                "26px",
+                {
+                  lineHeight: "34px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-md": [
+                "13px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "display-lg": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "metric-digit": [
+                "24px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+              "headline-sm": [
+                "20px",
+                { lineHeight: "28px", fontWeight: "600" },
+              ],
+              "label-xs": [
+                "10px",
+                {
+                  lineHeight: "12px",
+                  letterSpacing: "0.05em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }],
+              "headline-xl": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"
+  >
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-16 max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between"
+      >
+        <div class="flex items-center gap-spacing-md">
+          <img
+            alt="CrackGov2 logo: modern emblem combining a soaring arrow of achievement with an exam crest/academic book and tricolor-inspired accent, clean geometric vector mark for premier government exam test prep platform. Design context: - Primary color: #0f172a
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens."
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1WV0QbPmbKg-crhO_om2T0Ng9jIlQ15o9vUUPuOBj7EzAP8DZkrbcXkL5klE6E7FOGmOhym0AOpFFsA9Cteh5v_IfRfYrjEKL0j7avkBojRkNXmBxf07HAjY-i8Bg7aBqTrGEFq2RnBQAnZGBpkkYdMCiip-MAjq9281UDlR3deXJrII9_CnWxWUBNfDxm2p6Q9VprosfbzQB5ylZmdQLakVlcMk7f3bHHruoKCzJpAKD4vPKHTZuYLIa4"
+          /><span
+            class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight"
+            >CrackGov2</span
+          ><span
+            class="hidden sm:inline-flex items-center gap-spacing-2xs px-spacing-xs py-spacing-2xs rounded bg-surface-container text-on-surface font-label-xs text-label-xs uppercase tracking-wider font-bold"
+            >Govt Exam Prep #1</span
+          >
+        </div>
+        <nav
+          class="hidden md:flex items-center gap-spacing-lg"
+          data-active-classes="text-on-surface font-bold"
+        >
+          <a
+            aria-current="page"
+            class="transition-colors text-on-surface font-bold"
+            data-path="login"
+            href="#"
+            >Login</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors"
+            data-path="signup"
+            href="#"
+            >Sign Up</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors"
+            data-path="onboarding-category-selection"
+            href="#"
+            >Goal Setup</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors"
+            data-path="verify-otp"
+            href="#"
+            >Verification</a
+          >
+        </nav>
+        <div class="flex items-center gap-spacing-md">
+          <div
+            class="hidden lg:flex items-center gap-spacing-xs text-on-surface-variant font-label-md text-label-md"
+          >
+            <span class="material-symbols-outlined text-secondary-container"
+              >support_agent</span
+            ><span>1800-240-5678</span>
+          </div>
+          <div
+            class="hidden sm:flex items-center bg-surface-container rounded-lg p-0.5"
+          >
+            <button
+              class="px-spacing-xs py-spacing-2xs rounded-lg font-label-xs text-label-xs bg-surface-container-lowest text-on-surface shadow-[0_1px_3px_rgba(0,0,0,0.06)] font-bold"
+              type="button"
+            >
+              EN</button
+            ><button
+              class="px-spacing-xs py-spacing-2xs rounded-lg font-label-xs text-label-xs text-on-surface-variant hover:text-on-surface font-bold"
+              type="button"
+            >
+              हि
+            </button>
+          </div>
+          <div
+            class="flex items-center gap-spacing-2xs px-spacing-xs py-spacing-2xs bg-surface-container-high rounded text-on-surface font-label-xs text-label-xs"
+          >
+            <span class="material-symbols-outlined text-secondary text-[16px]"
+              >lock</span
+            ><span class="hidden xs:inline font-bold">SSL Secure</span>
+          </div>
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-on-primary text-[18px]"
+              >person</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      class="w-full pt-16 bg-surface flex-grow flex flex-col items-center justify-center relative"
+    >
+      <div class="flex flex-col w-full">
+        <!-- Subtle decorative ambient glow contained within parent -->
+        <div
+          class="relative w-full max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop py-spacing-xl lg:py-spacing-2xl"
+        >
+          <div
+            class="absolute top-10 left-1/4 w-96 h-96 rounded-full bg-secondary-container/5 blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-surface-variant/40 blur-3xl pointer-events-none"
+          ></div>
+          <!-- Active Live National Mock Ticker -->
+          <div
+            class="w-full mb-spacing-lg bg-surface-container-lowest shadow-sm rounded-xl p-spacing-xs px-spacing-md flex flex-col sm:flex-row items-center justify-between gap-spacing-xs"
+          >
+            <div class="flex items-center gap-spacing-xs min-w-0">
+              <span class="relative flex h-2.5 w-2.5">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary-container"
+                ></span>
+              </span>
+              <span
+                class="px-spacing-xs py-spacing-2xs bg-primary text-on-primary font-label-xs text-label-xs uppercase tracking-wider rounded font-bold"
+                >Live Exam Radar</span
+              >
+              <p class="font-body-sm text-body-sm text-on-surface truncate">
+                <strong class="font-title-md text-title-md"
+                  >SSC CGL Tier 1 All-India Mock #14:</strong
+                >
+                <span class="text-secondary font-semibold"
+                  >43,180 aspirants</span
+                >
+                actively competing right now.
+              </p>
+            </div>
+            <div
+              class="flex items-center gap-spacing-xs font-label-xs text-label-xs text-on-surface-variant font-bold shrink-0"
+            >
+              <span class="material-symbols-outlined text-secondary text-[16px]"
+                >schedule</span
+              >
+              <span>Windows closes at 11:59 PM IST</span>
+            </div>
+          </div>
+          <!-- Main 2-Column Split Grid -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-xl items-stretch"
+          >
+            <!-- Left Column: Trust Architecture & Social Proof -->
+            <div
+              class="lg:col-span-7 flex flex-col justify-between space-y-spacing-lg"
+            >
+              <!-- Brand & Credibility Pitch -->
+              <div class="space-y-spacing-md">
+                <div
+                  class="inline-flex items-center gap-spacing-xs px-spacing-sm py-spacing-2xs bg-surface-container-high rounded-full"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary-container text-[18px]"
+                    >verified</span
+                  >
+                  <span
+                    class="font-label-xs text-label-xs font-bold uppercase tracking-wider text-on-surface"
+                    >TCS-iON Benchmark Verified Architecture</span
+                  >
+                </div>
+                <h1
+                  class="font-headline-xl text-headline-xl text-on-surface tracking-tight leading-tight"
+                >
+                  Resume Your Mission: <br />
+                  <span class="text-secondary"
+                    >AIR Rank &amp; Daily Cockpit</span
+                  >
+                  Await.
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant max-w-xl"
+                >
+                  Join India's most rigorous aspirants in targeted mock cycles,
+                  sectional weakness diagnostics, and AI-driven precision
+                  time-management.
+                </p>
+              </div>
+              <!-- Macro Stats Metrics Row -->
+              <div
+                class="grid grid-cols-3 gap-spacing-sm bg-surface-container-lowest p-spacing-md rounded-xl shadow-sm"
+              >
+                <div class="space-y-spacing-2xs">
+                  <div
+                    class="font-metric-digit text-metric-digit text-on-surface"
+                  >
+                    4.8M+
+                  </div>
+                  <div
+                    class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold"
+                  >
+                    Registered Aspirants
+                  </div>
+                  <div
+                    class="flex items-center gap-1 text-[11px] text-tertiary-container font-semibold"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >trending_up</span
+                    >
+                    <span>All 28 States</span>
+                  </div>
+                </div>
+                <div
+                  class="space-y-spacing-2xs bg-surface-container-low/50 p-spacing-xs rounded-lg"
+                >
+                  <div
+                    class="font-metric-digit text-metric-digit text-secondary"
+                  >
+                    98.4%
+                  </div>
+                  <div
+                    class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold"
+                  >
+                    Real TCS-iON Match
+                  </div>
+                  <div
+                    class="flex items-center gap-1 text-[11px] text-on-surface-variant font-semibold"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >speed</span
+                    >
+                    <span>Sub-millisecond UI</span>
+                  </div>
+                </div>
+                <div class="space-y-spacing-2xs">
+                  <div
+                    class="font-metric-digit text-metric-digit text-on-surface"
+                  >
+                    1,200+
+                  </div>
+                  <div
+                    class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold"
+                  >
+                    AIR 1-100 (2024)
+                  </div>
+                  <div
+                    class="flex items-center gap-1 text-[11px] text-tertiary-container font-semibold"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >military_tech</span
+                    >
+                    <span>UPSC, SSC, Banking</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial Spotlight Card with Rich Visual Accent -->
+              <div
+                class="relative bg-surface-container-lowest p-spacing-lg rounded-xl shadow-md overflow-hidden"
+              >
+                <div
+                  class="absolute -right-8 -bottom-8 w-32 h-32 bg-secondary-container/10 rounded-full pointer-events-none"
+                ></div>
+                <div class="flex items-start gap-spacing-md">
+                  <div class="relative shrink-0">
+                    <img
+                      class="w-14 h-14 rounded-full object-cover shadow-sm"
+                      data-alt="Close-up professional portrait of a successful young Indian officer smiling, wearing formal business attire, crisp ambient studio light, inspiring government topper aesthetic"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg80UpKQgfu8fxfbj_ytpyaI1SPTQHoyiw2S12vkEztRcW2negxP5hbPLJHXWyRoAKpIpElQ9ru1DUY04qrzvGov0rO0uBFu2sU2Dwe7ekimgHVxWAKbxojvILpyiqzMUBEmYQNBoklLIVNKoBTJoBZeS0qPT0w-02uWmaPrrkDYhk5uBqQ9YkpfwJMHZORKP_seezfV9QJ81PdZKZAc6-MgleR1uDSiDS7oa5XUOsghzlJ1jdlEsJ"
+                    />
+                    <div
+                      class="absolute -bottom-1 -right-1 bg-secondary-container text-on-secondary rounded-full p-0.5 flex items-center justify-center"
+                    >
+                      <span class="material-symbols-outlined text-[14px]"
+                        >military_tech</span
+                      >
+                    </div>
+                  </div>
+                  <div class="space-y-spacing-xs">
+                    <div class="flex items-center gap-spacing-xs">
+                      <span
+                        class="font-title-md text-title-md text-on-surface font-bold"
+                        >Vikas Meena</span
+                      >
+                      <span
+                        class="px-spacing-xs py-0.5 bg-surface-container text-on-surface rounded font-label-xs text-label-xs font-bold"
+                        >AIR 72 • SSC CGL '23</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed"
+                    >
+                      "The mock test interface is a 100% replica of the actual
+                      exam hall. CrackGov2’s negative-marking penalty alert and
+                      time-per-question simulator prevented me from panic during
+                      General Intelligence section."
+                    </p>
+                    <div
+                      class="font-label-xs text-label-xs text-secondary font-bold uppercase tracking-wider"
+                    >
+                      Now: Inspector of Income Tax (CBDT, New Delhi)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Student Daily Deliverables Checklist -->
+              <div
+                class="space-y-spacing-xs bg-surface-container-low p-spacing-md rounded-xl"
+              >
+                <div
+                  class="font-label-xs text-label-xs uppercase tracking-wider text-on-surface-variant font-bold"
+                >
+                  Included in Your Daily Dashboard
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-3 gap-spacing-sm pt-spacing-2xs"
+                >
+                  <div class="flex items-center gap-spacing-xs">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[18px]"
+                      >library_books</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm font-semibold text-on-surface"
+                      >500+ Official PYQs</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-spacing-xs">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[18px]"
+                      >newspaper</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm font-semibold text-on-surface"
+                      >8 AM GK Capsule</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-spacing-xs">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[18px]"
+                      >analytics</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm font-semibold text-on-surface"
+                      >Live Percentile Rank</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Daily Prep Progress Sparkline Widget -->
+              <div
+                class="flex items-center justify-between p-spacing-sm bg-surface-container-lowest rounded-lg shadow-sm"
+              >
+                <div class="flex items-center gap-spacing-sm">
+                  <div
+                    class="w-8 h-8 rounded bg-surface-container flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-[18px]"
+                      >query_stats</span
+                    >
+                  </div>
+                  <div>
+                    <div
+                      class="font-label-md text-label-md font-bold text-on-surface"
+                    >
+                      Daily National Cohort Activity
+                    </div>
+                    <div
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Peak practice window currently underway
+                    </div>
+                  </div>
+                </div>
+                <!-- Sparkline SVG Visual element -->
+                <div class="w-32 h-8">
+                  <svg
+                    class="w-full h-full text-secondary-container"
+                    fill="none"
+                    viewbox="0 0 100 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 18L15 14L30 19L45 10L60 12L75 4L90 8L100 2"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                    ></path>
+                    <path
+                      d="M0 18L15 14L30 19L45 10L60 12L75 4L90 8L100 2V24H0V18Z"
+                      fill="currentColor"
+                      fill-opacity="0.12"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Right Column: Focused Secure Login Card -->
+            <div class="lg:col-span-5 flex flex-col justify-center">
+              <div
+                class="bg-surface-container-lowest p-spacing-lg sm:p-spacing-xl rounded-xl shadow-xl space-y-spacing-lg relative"
+              >
+                <!-- Card Header -->
+                <div class="space-y-spacing-2xs">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="px-spacing-xs py-spacing-2xs bg-surface-container text-on-surface font-label-xs text-label-xs uppercase font-bold tracking-wider rounded"
+                    >
+                      Aspirant Single Sign-On
+                    </span>
+                    <span
+                      class="flex items-center gap-1 font-label-xs text-label-xs text-secondary-container font-bold"
+                    >
+                      <span class="material-symbols-outlined text-[14px]"
+                        >bolt</span
+                      >
+                      Fastest Mode
+                    </span>
+                  </div>
+                  <h2
+                    class="font-headline-lg text-headline-lg text-on-surface font-bold"
+                  >
+                    Welcome Back
+                  </h2>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Enter your credentials to access your mock series, saved
+                    questions, and error notebook.
+                  </p>
+                </div>
+                <!-- Dual Tab Authentication Switcher -->
+                <div
+                  class="p-1 bg-surface-container rounded-lg grid grid-cols-2 gap-1 text-center font-label-md text-label-md"
+                >
+                  <button
+                    class="py-spacing-xs rounded-lg font-bold bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-center justify-center gap-spacing-2xs"
+                    id="tab-otp"
+                    type="button"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[16px] text-secondary"
+                      >sms</span
+                    >
+                    <span>Via OTP (Recommended)</span>
+                  </button>
+                  <button
+                    class="py-spacing-xs rounded-lg font-bold text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-spacing-2xs"
+                    id="tab-password"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >key</span
+                    >
+                    <span>Password</span>
+                  </button>
+                </div>
+                <!-- Login Form Area -->
+                <form
+                  class="space-y-spacing-md"
+                  id="auth-form"
+                  onsubmit="event.preventDefault()"
+                >
+                  <!-- OTP Flow Section -->
+                  <div class="space-y-spacing-md" id="otp-mode-container">
+                    <div class="space-y-spacing-2xs">
+                      <div class="flex justify-between items-center">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-bold"
+                          >Mobile Number</label
+                        >
+                        <button
+                          class="text-secondary font-label-xs text-label-xs hover:underline font-bold"
+                          id="toggle-roll-mode"
+                          type="button"
+                        >
+                          Use Roll No / Email instead
+                        </button>
+                      </div>
+                      <div
+                        class="flex rounded-lg overflow-hidden bg-surface-container-low shadow-sm focus-within:ring-2 focus-within:ring-secondary-container"
+                      >
+                        <div
+                          class="px-spacing-sm py-spacing-xs bg-surface-container-high flex items-center gap-1 font-label-md text-label-md text-on-surface font-bold select-none"
+                        >
+                          <span>🇮🇳</span>
+                          <span>+91</span>
+                        </div>
+                        <input
+                          class="w-full bg-transparent px-spacing-sm py-spacing-xs font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none"
+                          maxlength="10"
+                          placeholder="Enter 10-digit mobile number"
+                          type="tel"
+                          value="9876543210"
+                        />
+                        <button
+                          class="px-spacing-sm text-secondary hover:text-secondary-container font-label-md text-label-md font-bold whitespace-nowrap"
+                          type="button"
+                        >
+                          Resend
+                        </button>
+                      </div>
+                    </div>
+                    <!-- 4-Digit OTP Block -->
+                    <div class="space-y-spacing-2xs">
+                      <div class="flex items-center justify-between">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-bold"
+                          >One-Time Password (OTP)</label
+                        >
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant font-semibold"
+                          >Sent to +91 98765-XXXXX</span
+                        >
+                      </div>
+                      <div class="grid grid-cols-4 gap-spacing-sm">
+                        <input
+                          class="h-12 text-center font-metric-digit text-metric-digit text-on-surface bg-surface-container-low rounded-lg focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary-container outline-none transition-all"
+                          maxlength="1"
+                          type="text"
+                          value="7"
+                        />
+                        <input
+                          class="h-12 text-center font-metric-digit text-metric-digit text-on-surface bg-surface-container-low rounded-lg focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary-container outline-none transition-all"
+                          maxlength="1"
+                          type="text"
+                          value="4"
+                        />
+                        <input
+                          class="h-12 text-center font-metric-digit text-metric-digit text-on-surface bg-surface-container-low rounded-lg focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary-container outline-none transition-all"
+                          maxlength="1"
+                          type="text"
+                          value="2"
+                        />
+                        <input
+                          class="h-12 text-center font-metric-digit text-metric-digit text-on-surface bg-surface-container-low rounded-lg focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary-container outline-none transition-all"
+                          maxlength="1"
+                          placeholder="•"
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                      <div
+                        class="flex items-center justify-between pt-spacing-2xs"
+                      >
+                        <div
+                          class="flex items-center gap-1 font-label-xs text-label-xs text-on-surface-variant"
+                        >
+                          <span class="material-symbols-outlined text-[14px]"
+                            >timer</span
+                          >
+                          <span
+                            >Resend in
+                            <strong class="text-on-surface font-bold"
+                              >00:41</strong
+                            ></span
+                          >
+                        </div>
+                        <button
+                          class="flex items-center gap-1 font-label-xs text-label-xs text-secondary-container hover:text-secondary font-bold"
+                          type="button"
+                        >
+                          <span class="material-symbols-outlined text-[15px]"
+                            >chat</span
+                          >
+                          <span>Get OTP on WhatsApp</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Password Flow (Hidden by default, toggled via JS) -->
+                  <div
+                    class="space-y-spacing-md hidden"
+                    id="password-mode-container"
+                  >
+                    <div class="space-y-spacing-2xs">
+                      <label
+                        class="font-label-md text-label-md text-on-surface font-bold"
+                        >Email / Registration ID</label
+                      >
+                      <input
+                        class="w-full rounded-lg bg-surface-container-low px-spacing-sm py-spacing-xs font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary-container"
+                        placeholder="e.g. ssc.aspirant2025@crackgov.com"
+                        type="text"
+                      />
+                    </div>
+                    <div class="space-y-spacing-2xs">
+                      <div class="flex justify-between items-center">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-bold"
+                          >Password</label
+                        >
+                        <a
+                          class="font-label-xs text-label-xs text-secondary hover:underline font-bold"
+                          href="#"
+                          >Forgot Password?</a
+                        >
+                      </div>
+                      <div class="relative">
+                        <input
+                          class="w-full rounded-lg bg-surface-container-low px-spacing-sm py-spacing-xs font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary-container pr-10"
+                          placeholder="••••••••••••"
+                          type="password"
+                        />
+                        <button
+                          class="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface"
+                          type="button"
+                        >
+                          <span class="material-symbols-outlined text-[18px]"
+                            >visibility</span
+                          >
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Primary Login Action CTA -->
+                  <button
+                    class="w-full py-spacing-sm px-spacing-lg bg-secondary-container hover:bg-secondary text-on-secondary rounded-lg font-headline-sm text-headline-sm font-bold shadow-md hover:shadow-lg transition-all transform active:scale-[0.99] flex items-center justify-center gap-spacing-xs group"
+                    type="submit"
+                  >
+                    <span>Verify &amp; Enter Cockpit</span>
+                    <span
+                      class="material-symbols-outlined group-hover:translate-x-1 transition-transform text-[20px]"
+                      >arrow_forward</span
+                    >
+                  </button>
+                </form>
+                <!-- Divider -->
+                <div class="relative flex items-center justify-center">
+                  <div class="w-full h-px bg-surface-container-high"></div>
+                  <span
+                    class="absolute bg-surface-container-lowest px-spacing-sm font-label-xs text-label-xs text-on-surface-variant uppercase tracking-widest font-bold"
+                    >Or Continue With</span
+                  >
+                </div>
+                <!-- Social Quick Sign-In Buttons -->
+                <div class="grid grid-cols-2 gap-spacing-sm">
+                  <button
+                    class="py-spacing-xs px-spacing-sm bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-bold rounded-lg shadow-sm flex items-center justify-center gap-spacing-xs transition-colors"
+                    type="button"
+                  >
+                    <svg class="w-4 h-4" viewbox="0 0 24 24">
+                      <path
+                        d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"
+                        fill="#4285F4"
+                      ></path>
+                      <path
+                        d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"
+                        fill="#34A853"
+                      ></path>
+                      <path
+                        d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                        fill="#FBBC05"
+                      ></path>
+                      <path
+                        d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                        fill="#EA4335"
+                      ></path>
+                    </svg>
+                    <span>Google</span>
+                  </button>
+                  <button
+                    class="py-spacing-xs px-spacing-sm bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-bold rounded-lg shadow-sm flex items-center justify-center gap-spacing-xs transition-colors"
+                    type="button"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[#25D366] text-[18px]"
+                      >chat</span
+                    >
+                    <span>WhatsApp</span>
+                  </button>
+                </div>
+                <!-- Bottom Switch to Register -->
+                <div class="pt-spacing-2xs text-center">
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    New to CrackGov2?
+                    <a
+                      class="text-secondary font-bold hover:underline inline-flex items-center gap-0.5"
+                      data-path="signup"
+                      href="#"
+                    >
+                      <span>Create free student account</span>
+                      <span class="material-symbols-outlined text-[14px]"
+                        >arrow_outward</span
+                      >
+                    </a>
+                  </p>
+                </div>
+                <!-- Security Footnote Badge -->
+                <div
+                  class="p-spacing-xs bg-surface-container-low rounded-lg flex items-center justify-center gap-spacing-xs text-on-surface-variant font-label-xs text-label-xs"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[16px]"
+                    >verified_user</span
+                  >
+                  <span
+                    >256-Bit SSL Encrypted • Official TCS-iON Test Engine
+                    Partner</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Interactive script for switching OTP vs Password Tabs -->
+        <script>
+          (function () {
+            const tabOtp = document.getElementById("tab-otp");
+            const tabPassword = document.getElementById("tab-password");
+            const otpContainer = document.getElementById("otp-mode-container");
+            const passwordContainer = document.getElementById(
+              "password-mode-container",
+            );
+
+            if (tabOtp && tabPassword && otpContainer && passwordContainer) {
+              tabOtp.addEventListener("click", function () {
+                tabOtp.classList.add(
+                  "bg-surface-container-lowest",
+                  "text-on-surface",
+                  "shadow-sm",
+                );
+                tabOtp.classList.remove("text-on-surface-variant");
+
+                tabPassword.classList.remove(
+                  "bg-surface-container-lowest",
+                  "text-on-surface",
+                  "shadow-sm",
+                );
+                tabPassword.classList.add("text-on-surface-variant");
+
+                otpContainer.classList.remove("hidden");
+                passwordContainer.classList.add("hidden");
+              });
+
+              tabPassword.addEventListener("click", function () {
+                tabPassword.classList.add(
+                  "bg-surface-container-lowest",
+                  "text-on-surface",
+                  "shadow-sm",
+                );
+                tabPassword.classList.remove("text-on-surface-variant");
+
+                tabOtp.classList.remove(
+                  "bg-surface-container-lowest",
+                  "text-on-surface",
+                  "shadow-sm",
+                );
+                tabOtp.classList.add("text-on-surface-variant");
+
+                passwordContainer.classList.remove("hidden");
+                otpContainer.classList.add("hidden");
+              });
+            }
+          })();
+        </script>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-low py-spacing-lg shadow-[0_1px_8px_rgba(0,0,0,0.02)]"
+    >
+      <div
+        class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop flex flex-col md:flex-row items-center justify-between gap-spacing-md text-on-surface-variant font-body-sm text-body-sm"
+      >
+        <div class="flex items-center gap-spacing-sm">
+          <span class="material-symbols-outlined text-tertiary-fixed-dim"
+            >verified_user</span
+          ><span
+            >TCS-iON Compliant Architecture • 100% Student Data Protection</span
+          >
+        </div>
+        <div
+          class="flex items-center gap-spacing-md font-label-md text-label-md"
+        >
+          <a
+            class="text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="privacy-policy"
+            href="#"
+            >Privacy Policy</a
+          ><span>•</span
+          ><a
+            class="text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="terms-and-conditions"
+            href="#"
+            >Terms of Use</a
+          ><span>•</span
+          ><a
+            class="text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="student-help-desk"
+            href="#"
+            >24/7 Helpline</a
+          >
+        </div>
+        <div class="text-on-surface-variant font-body-sm text-body-sm">
+          © 2025 CrackGov2 EdTech Pvt Ltd. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

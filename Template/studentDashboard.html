@@ -1,0 +1,2191 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CrackGov2 - Premier Govt Exam Prep Portal</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#005236",
+              secondary: "#a73a00",
+              "on-primary-fixed-variant": "#3f465c",
+              "on-secondary-fixed": "#370e00",
+              "inverse-primary": "#bec6e0",
+              "surface-container-highest": "#d3e4fe",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#7c839b",
+              "on-error": "#ffffff",
+              "on-tertiary-container": "#009668",
+              background: "#f8f9ff",
+              primary: "#000000",
+              "surface-container-high": "#dce9ff",
+              "on-surface-variant": "#45464d",
+              "tertiary-fixed-dim": "#4edea3",
+              "primary-container": "#131b2e",
+              "on-background": "#0b1c30",
+              "primary-fixed-dim": "#bec6e0",
+              "inverse-on-surface": "#eaf1ff",
+              surface: "#f8f9ff",
+              "on-primary-fixed": "#131b2e",
+              "secondary-fixed-dim": "#ffb599",
+              "tertiary-fixed": "#6ffbbe",
+              "error-container": "#ffdad6",
+              outline: "#76777d",
+              "secondary-container": "#fd651e",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed": "#002113",
+              "surface-dim": "#cbdbf5",
+              "surface-tint": "#565e74",
+              "surface-container": "#e5eeff",
+              "outline-variant": "#c6c6cd",
+              "secondary-fixed": "#ffdbce",
+              "on-surface": "#0b1c30",
+              "surface-bright": "#f8f9ff",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#dae2fd",
+              "on-secondary-container": "#571a00",
+              "inverse-surface": "#213145",
+              "surface-variant": "#d3e4fe",
+              tertiary: "#000000",
+              error: "#ba1a1a",
+              "on-primary": "#ffffff",
+              "surface-container-low": "#eff4ff",
+              "tertiary-container": "#002113",
+              "on-secondary-fixed-variant": "#7f2b00",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "gutter-desktop": "1.5rem",
+              "spacing-xs": "0.5rem",
+              "spacing-xl": "2rem",
+              "spacing-2xs": "0.25rem",
+              "spacing-md": "1rem",
+              "gutter-tablet": "1.5rem",
+              "gutter-mobile": "1rem",
+              "container-max": "80rem",
+              "spacing-sm": "0.75rem",
+              "spacing-lg": "1.5rem",
+              "spacing-2xl": "3rem",
+            },
+            fontFamily: {
+              "body-lg": ["Plus Jakarta Sans"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "display-lg": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "display-lg-mobile": ["Plus Jakarta Sans"],
+              "headline-xl": ["Plus Jakarta Sans"],
+              "label-xs": ["Plus Jakarta Sans"],
+              "title-md": ["Plus Jakarta Sans"],
+              "headline-xl-mobile": ["Plus Jakarta Sans"],
+              "metric-digit": ["Plus Jakarta Sans"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "label-md": ["Plus Jakarta Sans"],
+              "body-md": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+              "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }],
+              "display-lg": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-lg": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "display-lg-mobile": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-xl": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-xs": [
+                "10px",
+                {
+                  lineHeight: "12px",
+                  letterSpacing: "0.05em",
+                  fontWeight: "700",
+                },
+              ],
+              "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }],
+              "headline-xl-mobile": [
+                "26px",
+                {
+                  lineHeight: "34px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "metric-digit": [
+                "24px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-sm": [
+                "20px",
+                { lineHeight: "28px", fontWeight: "600" },
+              ],
+              "label-md": [
+                "13px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-surface font-body-md text-on-surface antialiased min-h-screen"
+  >
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-[80rem] mx-auto px-gutter-desktop flex items-center justify-between gap-spacing-md"
+      >
+        <div class="flex items-center gap-spacing-md shrink-0">
+          <a class="flex items-center gap-spacing-xs group" href="#"
+            ><img
+              alt="CrackGov2 Brand Logo"
+              class="h-8 w-auto object-contain"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-NaXyBDuQ6-DKBjsUJUHFLGXB-oVlrUJqzC-uwAt1WDPL6dSSvz1ZPhoo9FGF9_Ej8aGR8beVxpgQ5yT_KryvYGgGRYgnEW7Hbm9U0mXmlg2yjqOr3N08cRAXeByCCeCwlQfU_dRxddjecRcQ6gr0Y5x1J4Ooq02ecp32WWcaVlPFCj21eNusskhpY6kE89I0aWGgplWvAesIfcyt4sOBM-qF01a66G5VJBR8RxjEx89DyrYXlMPK"
+            /><span
+              class="font-headline-sm text-headline-sm font-extrabold text-on-surface tracking-tight group-hover:text-secondary transition-colors"
+              >CrackGov<span class="text-secondary">2</span></span
+            ></a
+          ><span
+            class="hidden xl:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-xs text-label-xs uppercase tracking-wider font-bold"
+            ><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Govt
+            Exam Prep #1</span
+          >
+          <div class="relative group hidden lg:block">
+            <button
+              class="flex items-center gap-spacing-2xs px-spacing-sm py-spacing-xs rounded-xl bg-surface-container-low text-on-surface font-title-md text-title-md hover:bg-surface-container-high transition-colors"
+              type="button"
+            >
+              <span
+                class="material-symbols-outlined text-[20px] text-on-surface-variant"
+                >grid_view</span
+              >Exams<span
+                class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:rotate-180 transition-transform"
+                >expand_more</span
+              >
+            </button>
+          </div>
+        </div>
+        <div class="flex-1 max-w-xl hidden md:flex items-center relative">
+          <div
+            class="w-full flex items-center rounded-xl bg-surface-container px-spacing-md py-spacing-xs transition-all focus-within:ring-2 focus-within:ring-secondary-container bg-opacity-70"
+          >
+            <span
+              class="material-symbols-outlined text-on-surface-variant mr-spacing-xs text-[20px]"
+              >search</span
+            ><input
+              class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:outline-none"
+              placeholder="Search mock tests, exam notices, subjects (e.g., SSC CGL Tier 1, SBI PO)..."
+              type="text"
+            /><span
+              class="hidden lg:inline-flex items-center px-2 py-0.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-xs text-label-xs tracking-wider border-0 shadow-sm"
+              >Ctrl+K</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-spacing-sm lg:gap-spacing-md shrink-0"
+        >
+          <div
+            class="hidden sm:flex items-center bg-surface-container rounded-full p-1"
+          >
+            <button
+              class="px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-xs text-label-xs font-bold shadow-sm"
+              type="button"
+            >
+              ENG</button
+            ><button
+              class="px-2.5 py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-xs text-label-xs font-bold transition-colors"
+              type="button"
+            >
+              हिन्दी
+            </button>
+          </div>
+          <nav
+            class="hidden xl:flex items-center gap-1"
+            data-active-classes="bg-primary-container text-on-primary font-bold rounded-xl"
+          >
+            <a
+              class="px-spacing-sm py-spacing-xs rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors"
+              data-path="test-series"
+              href="#"
+              >Test Series</a
+            ><a
+              class="px-spacing-sm py-spacing-xs rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md flex items-center gap-1.5 transition-colors"
+              data-path="job-radar"
+              href="#"
+              >Job Radar<span class="flex h-2 w-2 relative"
+                ><span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"
+                ></span
+                ><span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-secondary"
+                ></span></span></a
+            ><a
+              class="px-spacing-sm py-spacing-xs rounded-xl text-on-surface-variant hover:text-on-surface font-title-md text-title-md flex items-center gap-1.5 transition-colors"
+              data-path="pro-pass"
+              href="#"
+              >Pro Pass<span
+                class="px-1.5 py-0.5 rounded-lg bg-secondary-container text-on-secondary font-label-xs text-label-xs uppercase font-extrabold"
+                >PRO</span
+              ></a
+            >
+          </nav>
+          <div class="flex items-center gap-spacing-xs">
+            <button
+              aria-label="Notifications"
+              class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+              type="button"
+            >
+              <span class="material-symbols-outlined text-[24px]"
+                >notifications</span
+              ><span
+                class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"
+              ></span>
+            </button>
+            <div class="flex items-center gap-spacing-xs pl-spacing-2xs">
+              <img
+                alt="Profile"
+                class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-highest"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIdItI5uutsoER_Q_A34He_GISQh6B6B_dr3nRJCUCW5ZQ2kg0bPdpITpY4N70_57zBL-eK73iyAnOQsF-_cafZN1XyNSl_t9-cCr0Em2ovLX3JbCY8_RqTqXfyLpfADZgjnJmmFJsQtX2lkoHJSHBhS1QGrz69rKrAvOoO7zhRxc9zkSEmxNYfGG1H00Pg6d2LtnF-eEswb6zDXHiY9nL8OwKH4p4d5R1dnQ-6oYyJqOsy6fZoPeT"
+              />
+              <div class="hidden 2xl:flex flex-col text-left leading-none">
+                <span
+                  class="font-title-md text-body-md font-bold text-on-surface truncate max-w-[120px]"
+                  >Rahul S.</span
+                ><span
+                  class="font-label-xs text-label-xs text-secondary font-semibold"
+                  >AIR 420 aspirant</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface min-h-screen">
+      <div class="flex flex-col w-full">
+        <!-- Target Exam Hero & Readiness Cockpit -->
+        <section
+          class="w-full px-gutter-desktop max-w-[80rem] mx-auto pt-spacing-lg pb-spacing-md"
+        >
+          <div
+            class="rounded-xl bg-primary-container text-on-primary p-spacing-lg relative overflow-hidden shadow-xl"
+          >
+            <!-- Decorative TCS-aligned background vector -->
+            <div
+              class="absolute -right-12 -top-12 opacity-10 pointer-events-none"
+            >
+              <svg
+                fill="currentColor"
+                height="340"
+                viewbox="0 0 100 100"
+                width="340"
+              >
+                <polygon points="50,0 100,25 100,75 50,100 0,75 0,25"></polygon>
+              </svg>
+            </div>
+            <div
+              class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-spacing-md"
+            >
+              <div class="flex flex-col gap-spacing-2xs max-w-2xl">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span
+                    class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary font-label-xs text-label-xs uppercase tracking-wider font-extrabold flex items-center gap-1"
+                  >
+                    <span
+                      class="w-1.5 h-1.5 rounded-full bg-white animate-ping"
+                    ></span>
+                    Live Target Cockpit
+                  </span>
+                  <span
+                    class="px-2.5 py-0.5 rounded-full bg-surface-container-high/20 text-inverse-primary font-label-xs text-label-xs tracking-wider font-semibold"
+                  >
+                    TCS-iON Pattern v2025.2
+                  </span>
+                  <span
+                    class="px-2 py-0.5 rounded-full bg-tertiary-container text-tertiary-fixed font-label-xs text-label-xs font-bold"
+                  >
+                    🔥 18-Day Study Streak
+                  </span>
+                </div>
+                <h1
+                  class="font-headline-lg text-headline-lg font-extrabold text-on-primary tracking-tight mt-1"
+                >
+                  Welcome back, Ankit Sharma!
+                </h1>
+                <p
+                  class="font-body-md text-body-md text-on-primary-container flex items-center gap-2"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px] text-secondary-fixed"
+                    >flag</span
+                  >
+                  <span
+                    >Target:
+                    <strong class="text-on-primary font-bold"
+                      >SSC CGL 2025 Tier-1 &amp; Tier-2</strong
+                    ></span
+                  >
+                  <span
+                    class="inline-block w-1 h-1 rounded-full bg-outline-variant"
+                  ></span>
+                  <span
+                    class="text-secondary-fixed font-bold bg-secondary/30 px-2 py-0.5 rounded-lg"
+                    >Exam in 58 Days</span
+                  >
+                </p>
+              </div>
+              <!-- Quick Top CTA Actions -->
+              <div class="flex flex-wrap items-center gap-spacing-xs shrink-0">
+                <button
+                  class="px-spacing-md py-spacing-xs rounded-xl bg-secondary-container hover:bg-secondary text-on-secondary font-title-md text-title-md font-bold transition-all shadow-md active:scale-95 flex items-center gap-2"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >play_circle</span
+                  >
+                  Resume Mock #9 (Tier-1)
+                </button>
+                <button
+                  class="px-spacing-md py-spacing-xs rounded-xl bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-inverse-on-surface font-title-md text-title-md font-semibold transition-all flex items-center gap-1.5"
+                  type="button"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px] text-tertiary-fixed"
+                    >quiz</span
+                  >
+                  Daily CA Capsule
+                </button>
+              </div>
+            </div>
+            <!-- Realtime KPI Metric Ribbon -->
+            <div
+              class="mt-spacing-lg pt-spacing-md grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-spacing-sm"
+            >
+              <div
+                class="rounded-xl bg-surface-container-low/10 p-spacing-sm backdrop-blur-sm"
+              >
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-xs text-label-xs uppercase tracking-wider text-on-primary-container font-semibold"
+                    >Readiness Index</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-tertiary-fixed"
+                    >verified</span
+                  >
+                </div>
+                <div class="mt-1 flex items-baseline gap-1">
+                  <span
+                    class="font-metric-digit text-metric-digit font-extrabold text-tertiary-fixed"
+                    >78%</span
+                  >
+                  <span
+                    class="font-label-xs text-label-xs text-on-primary-container"
+                    >Exam Ready</span
+                  >
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-inverse-primary/80 mt-1 truncate"
+                >
+                  Cutoff: 142.5 | Pred:
+                  <span class="text-tertiary-fixed font-bold">154</span>
+                </p>
+              </div>
+              <div
+                class="rounded-xl bg-surface-container-low/10 p-spacing-sm backdrop-blur-sm"
+              >
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-xs text-label-xs uppercase tracking-wider text-on-primary-container font-semibold"
+                    >Tests Completed</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-secondary-fixed"
+                    >assignment_turned_in</span
+                  >
+                </div>
+                <div class="mt-1 flex items-baseline gap-1">
+                  <span
+                    class="font-metric-digit text-metric-digit font-extrabold text-on-primary"
+                    >42</span
+                  >
+                  <span
+                    class="font-label-xs text-label-xs text-on-primary-container"
+                    >Attempted</span
+                  >
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-inverse-primary/80 mt-1"
+                >
+                  8 Full • 34 Sectional
+                </p>
+              </div>
+              <div
+                class="rounded-xl bg-surface-container-low/10 p-spacing-sm backdrop-blur-sm"
+              >
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-xs text-label-xs uppercase tracking-wider text-on-primary-container font-semibold"
+                    >Overall Accuracy</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-tertiary-fixed"
+                    >speed</span
+                  >
+                </div>
+                <div class="mt-1 flex items-baseline gap-1">
+                  <span
+                    class="font-metric-digit text-metric-digit font-extrabold text-on-primary"
+                    >86.4%</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-[14px] text-tertiary-fixed"
+                    >trending_up</span
+                  >
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-inverse-primary/80 mt-1"
+                >
+                  +2.3% vs last week
+                </p>
+              </div>
+              <div
+                class="rounded-xl bg-surface-container-low/10 p-spacing-sm backdrop-blur-sm"
+              >
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-xs text-label-xs uppercase tracking-wider text-on-primary-container font-semibold"
+                    >All India Rank</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-secondary-fixed"
+                    >military_tech</span
+                  >
+                </div>
+                <div class="mt-1 flex items-baseline gap-1">
+                  <span
+                    class="font-metric-digit text-metric-digit font-extrabold text-secondary-fixed"
+                    >1,420</span
+                  >
+                  <span
+                    class="font-label-xs text-label-xs text-on-primary-container"
+                    >/ 44.5k</span
+                  >
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-tertiary-fixed font-bold mt-1"
+                >
+                  96.8th Percentile
+                </p>
+              </div>
+              <div
+                class="col-span-2 sm:col-span-1 rounded-xl bg-surface-container-low/10 p-spacing-sm backdrop-blur-sm"
+              >
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-xs text-label-xs uppercase tracking-wider text-on-primary-container font-semibold"
+                    >Active Streak</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-secondary-container"
+                    >local_fire_department</span
+                  >
+                </div>
+                <div class="mt-1 flex items-baseline gap-1">
+                  <span
+                    class="font-metric-digit text-metric-digit font-extrabold text-secondary-container"
+                    >18 Days</span
+                  >
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-inverse-primary/80 mt-1"
+                >
+                  Goal: 60 Days unbroken
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Main Aspirant Cockpit Layout (3/4 Grid & 1/4 Tools Sidebar) -->
+        <section
+          class="w-full px-gutter-desktop max-w-[80rem] mx-auto py-spacing-md"
+        >
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-lg items-start"
+          >
+            <!-- Left Column: High-Yield Daily Cockpit, Diagnostics, Scorecards (8 Cols) -->
+            <div class="lg:col-span-8 flex flex-col gap-spacing-lg">
+              <!-- Today's High-Yield Study Schedule -->
+              <div
+                class="rounded-xl bg-surface-container-lowest shadow-sm p-spacing-lg"
+              >
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between gap-spacing-xs mb-spacing-md"
+                >
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <h2
+                        class="font-headline-sm text-headline-sm font-bold text-on-surface"
+                      >
+                        Today's High-Yield Cockpit
+                      </h2>
+                      <span
+                        class="px-2 py-0.5 rounded bg-surface-container font-label-xs text-label-xs text-on-surface-variant font-bold"
+                        >4 Tasks</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Recommended pace for SSC CGL 2025 Tier-1 targets
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="font-label-xs text-label-xs text-on-surface-variant font-bold uppercase tracking-wider"
+                      >Progress:</span
+                    >
+                    <div class="w-28 bg-surface-container rounded-full h-2">
+                      <div
+                        class="bg-secondary h-2 rounded-full"
+                        style="width: 45%"
+                      ></div>
+                    </div>
+                    <span
+                      class="font-label-xs text-label-xs text-on-surface font-bold"
+                      >45%</span
+                    >
+                  </div>
+                </div>
+                <!-- Interactive Schedule List -->
+                <div class="flex flex-col gap-spacing-xs">
+                  <!-- Task 1: Completed -->
+                  <div
+                    class="rounded-xl bg-surface-container-low p-spacing-sm flex flex-col sm:flex-row sm:items-center justify-between gap-spacing-sm"
+                  >
+                    <div class="flex items-start gap-spacing-sm">
+                      <div
+                        class="w-8 h-8 rounded-full bg-tertiary-fixed-dim/30 flex items-center justify-center shrink-0 mt-0.5"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[20px] text-tertiary-container"
+                          >check_circle</span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                          <span
+                            class="font-label-xs text-label-xs font-bold uppercase tracking-wider text-on-surface-variant"
+                            >08:00 AM • 15 Mins</span
+                          >
+                          <span
+                            class="px-1.5 py-0.2 rounded bg-tertiary-container text-tertiary-fixed font-label-xs text-label-xs font-bold"
+                            >Completed</span
+                          >
+                        </div>
+                        <h3
+                          class="font-title-md text-title-md font-bold text-on-surface"
+                        >
+                          Daily Current Affairs &amp; Editorial Capsule
+                        </h3>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          10 Questions attempted • Scored
+                          <strong class="text-on-surface font-semibold"
+                            >9/10</strong
+                          >
+                          (Time: 7m 24s)
+                        </p>
+                      </div>
+                    </div>
+                    <div class="shrink-0 flex sm:justify-end">
+                      <button
+                        class="px-spacing-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors"
+                        type="button"
+                      >
+                        Review (1 Wrong)
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Task 2: In Progress / Ready -->
+                  <div
+                    class="rounded-xl bg-surface-container-lowest shadow-sm p-spacing-sm flex flex-col sm:flex-row sm:items-center justify-between gap-spacing-sm"
+                  >
+                    <div class="flex items-start gap-spacing-sm">
+                      <div
+                        class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center shrink-0 mt-0.5 font-bold"
+                      >
+                        2
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                          <span
+                            class="font-label-xs text-label-xs font-bold uppercase tracking-wider text-secondary"
+                            >11:30 AM • In Progress</span
+                          >
+                          <span
+                            class="px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed font-label-xs text-label-xs font-bold"
+                            >High Yield Drill</span
+                          >
+                        </div>
+                        <h3
+                          class="font-title-md text-title-md font-bold text-on-surface"
+                        >
+                          Quant Speed Drill: Advanced Trigonometry &amp; Algebra
+                        </h3>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          25 Questions • 20 Minutes • Negative Marking: -0.50
+                        </p>
+                      </div>
+                    </div>
+                    <div class="shrink-0 flex sm:justify-end">
+                      <button
+                        class="px-spacing-md py-spacing-xs rounded-xl bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-title-md text-title-md font-bold transition-all shadow-sm active:scale-95 flex items-center gap-1"
+                        type="button"
+                      >
+                        <span>Start Drill</span>
+                        <span class="material-symbols-outlined text-[16px]"
+                          >arrow_forward</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Task 3: Upcoming Mega Mock -->
+                  <div
+                    class="rounded-xl bg-surface-container-low p-spacing-sm flex flex-col sm:flex-row sm:items-center justify-between gap-spacing-sm"
+                  >
+                    <div class="flex items-start gap-spacing-sm">
+                      <div
+                        class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5 font-bold text-on-surface-variant"
+                      >
+                        3
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                          <span
+                            class="font-label-xs text-label-xs font-bold uppercase tracking-wider text-on-surface-variant"
+                            >03:00 PM • Live Test</span
+                          >
+                          <span
+                            class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface font-label-xs text-label-xs font-bold"
+                            >AIR Ranking Live</span
+                          >
+                        </div>
+                        <h3
+                          class="font-title-md text-title-md font-bold text-on-surface"
+                        >
+                          Live All-India Mega Mock Test: SSC CGL Tier-1
+                          Challenge #14
+                        </h3>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          100 Qs • 60 Mins • 24,000+ Enrolled Aspirants
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="shrink-0 flex sm:justify-end items-center gap-2"
+                    >
+                      <span
+                        class="px-spacing-sm py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-bold flex items-center gap-1"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          >timer</span
+                        >
+                        Starts in 2h 14m
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Task 4: Evening Revision -->
+                  <div
+                    class="rounded-xl bg-surface-container-low p-spacing-sm flex flex-col sm:flex-row sm:items-center justify-between gap-spacing-sm"
+                  >
+                    <div class="flex items-start gap-spacing-sm">
+                      <div
+                        class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5 font-bold text-on-surface-variant"
+                      >
+                        4
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                          <span
+                            class="font-label-xs text-label-xs font-bold uppercase tracking-wider text-on-surface-variant"
+                            >07:00 PM • Self Review</span
+                          >
+                        </div>
+                        <h3
+                          class="font-title-md text-title-md font-bold text-on-surface"
+                        >
+                          Weak Area Revision: English Error Spotting &amp;
+                          Idioms
+                        </h3>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Review 14 marked items from Mistake Notebook
+                        </p>
+                      </div>
+                    </div>
+                    <div class="shrink-0 flex sm:justify-end">
+                      <button
+                        class="px-spacing-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors"
+                        type="button"
+                      >
+                        Open Notebook
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Subject-wise Performance & Weak Spot Matrix -->
+              <div
+                class="rounded-xl bg-surface-container-lowest shadow-sm p-spacing-lg"
+              >
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between gap-spacing-xs mb-spacing-md"
+                >
+                  <div>
+                    <h2
+                      class="font-headline-sm text-headline-sm font-bold text-on-surface"
+                    >
+                      Subject-wise Mastery &amp; Diagnostic Matrix
+                    </h2>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Based on your last 10 Tier-1 Mock examinations
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-spacing-xs">
+                    <span
+                      class="px-2 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs font-bold"
+                    >
+                      Max Marks: 200 (50/Section)
+                    </span>
+                  </div>
+                </div>
+                <!-- 4 Subject Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-spacing-md">
+                  <!-- Subject 1: Quantitative Aptitude -->
+                  <div
+                    class="rounded-xl bg-surface-container-low p-spacing-md flex flex-col justify-between"
+                  >
+                    <div>
+                      <div
+                        class="flex items-center justify-between mb-spacing-xs"
+                      >
+                        <div class="flex items-center gap-2">
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-secondary"
+                          ></span>
+                          <span
+                            class="font-title-md text-title-md font-bold text-on-surface"
+                            >Quantitative Aptitude</span
+                          >
+                        </div>
+                        <span
+                          class="font-title-md text-title-md font-extrabold text-on-surface"
+                          >44.5
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/50</span
+                          ></span
+                        >
+                      </div>
+                      <!-- Accuracy bar -->
+                      <div
+                        class="flex items-center justify-between font-label-xs text-label-xs mb-1"
+                      >
+                        <span class="text-on-surface-variant"
+                          >Sectional Accuracy</span
+                        >
+                        <span class="font-bold text-on-surface">92%</span>
+                      </div>
+                      <div
+                        class="w-full bg-surface-container-high rounded-full h-1.5 mb-spacing-sm"
+                      >
+                        <div
+                          class="bg-secondary h-1.5 rounded-full"
+                          style="width: 92%"
+                        ></div>
+                      </div>
+                      <div
+                        class="flex flex-col gap-1.5 text-body-sm font-body-sm"
+                      >
+                        <div class="flex items-start gap-1.5">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-tertiary-container mt-0.5"
+                            >check_circle</span
+                          >
+                          <span class="text-on-surface-variant"
+                            ><strong class="text-on-surface">Strong:</strong>
+                            Arithmetic, Geometry</span
+                          >
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-secondary mt-0.5"
+                            >warning</span
+                          >
+                          <span class="text-on-surface-variant"
+                            ><strong class="text-secondary"
+                              >Needs Focus:</strong
+                            >
+                            Profit &amp; Loss DI</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mt-spacing-md pt-spacing-xs flex items-center justify-between"
+                    >
+                      <span
+                        class="font-label-xs text-label-xs font-bold text-on-surface-variant"
+                        >P&amp;L Acc: 64%</span
+                      >
+                      <button
+                        class="px-2.5 py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-secondary font-label-md text-label-md font-bold shadow-sm transition-all flex items-center gap-1"
+                        type="button"
+                      >
+                        <span>Fix DI Topic</span>
+                        <span class="material-symbols-outlined text-[14px]"
+                          >bolt</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Subject 2: Reasoning -->
+                  <div
+                    class="rounded-xl bg-surface-container-low p-spacing-md flex flex-col justify-between"
+                  >
+                    <div>
+                      <div
+                        class="flex items-center justify-between mb-spacing-xs"
+                      >
+                        <div class="flex items-center gap-2">
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-tertiary-container"
+                          ></span>
+                          <span
+                            class="font-title-md text-title-md font-bold text-on-surface"
+                            >Gen. Intelligence &amp; Reasoning</span
+                          >
+                        </div>
+                        <span
+                          class="font-title-md text-title-md font-extrabold text-on-surface"
+                          >46.0
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/50</span
+                          ></span
+                        >
+                      </div>
+                      <!-- Accuracy bar -->
+                      <div
+                        class="flex items-center justify-between font-label-xs text-label-xs mb-1"
+                      >
+                        <span class="text-on-surface-variant"
+                          >Sectional Accuracy</span
+                        >
+                        <span class="font-bold text-tertiary-container"
+                          >96%</span
+                        >
+                      </div>
+                      <div
+                        class="w-full bg-surface-container-high rounded-full h-1.5 mb-spacing-sm"
+                      >
+                        <div
+                          class="bg-tertiary-container h-1.5 rounded-full"
+                          style="width: 96%"
+                        ></div>
+                      </div>
+                      <div
+                        class="flex flex-col gap-1.5 text-body-sm font-body-sm"
+                      >
+                        <div class="flex items-start gap-1.5">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-tertiary-container mt-0.5"
+                            >verified</span
+                          >
+                          <span class="text-on-surface-variant"
+                            ><strong class="text-on-surface">Mastered:</strong>
+                            Syllogisms, Coding-Decoding</span
+                          >
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-on-surface-variant mt-0.5"
+                            >info</span
+                          >
+                          <span class="text-on-surface-variant"
+                            >Speed: Avg 38s / question (Optimum)</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mt-spacing-md pt-spacing-xs flex items-center justify-between"
+                    >
+                      <span
+                        class="font-label-xs text-label-xs font-bold text-on-surface-variant"
+                        >99th Percentile</span
+                      >
+                      <button
+                        class="px-2.5 py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-bold shadow-sm transition-all flex items-center gap-1"
+                        type="button"
+                      >
+                        <span>Take Speed Quiz</span>
+                        <span class="material-symbols-outlined text-[14px]"
+                          >arrow_forward</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Subject 3: English Comprehension -->
+                  <div
+                    class="rounded-xl bg-surface-container-low p-spacing-md flex flex-col justify-between"
+                  >
+                    <div>
+                      <div
+                        class="flex items-center justify-between mb-spacing-xs"
+                      >
+                        <div class="flex items-center gap-2">
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-outline"
+                          ></span>
+                          <span
+                            class="font-title-md text-title-md font-bold text-on-surface"
+                            >English Comprehension</span
+                          >
+                        </div>
+                        <span
+                          class="font-title-md text-title-md font-extrabold text-on-surface"
+                          >38.5
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/50</span
+                          ></span
+                        >
+                      </div>
+                      <!-- Accuracy bar -->
+                      <div
+                        class="flex items-center justify-between font-label-xs text-label-xs mb-1"
+                      >
+                        <span class="text-on-surface-variant"
+                          >Sectional Accuracy</span
+                        >
+                        <span class="font-bold text-on-surface">78%</span>
+                      </div>
+                      <div
+                        class="w-full bg-surface-container-high rounded-full h-1.5 mb-spacing-sm"
+                      >
+                        <div
+                          class="bg-outline h-1.5 rounded-full"
+                          style="width: 78%"
+                        ></div>
+                      </div>
+                      <div
+                        class="flex flex-col gap-1.5 text-body-sm font-body-sm"
+                      >
+                        <div class="flex items-start gap-1.5">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-tertiary-container mt-0.5"
+                            >check_circle</span
+                          >
+                          <span class="text-on-surface-variant"
+                            ><strong class="text-on-surface">Strong:</strong>
+                            Active-Passive, Direct-Indirect</span
+                          >
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-error mt-0.5"
+                            >error</span
+                          >
+                          <span class="text-on-surface-variant"
+                            ><strong class="text-error">Alert:</strong> RC Speed
+                            &amp; Cloze Test</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mt-spacing-md pt-spacing-xs flex items-center justify-between"
+                    >
+                      <span
+                        class="font-label-xs text-label-xs font-bold text-on-surface-variant"
+                        >RC Acc: 61%</span
+                      >
+                      <button
+                        class="px-2.5 py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-secondary font-label-md text-label-md font-bold shadow-sm transition-all flex items-center gap-1"
+                        type="button"
+                      >
+                        <span>Practice Cloze</span>
+                        <span class="material-symbols-outlined text-[14px]"
+                          >bolt</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Subject 4: General Awareness -->
+                  <div
+                    class="rounded-xl bg-surface-container-low p-spacing-md flex flex-col justify-between"
+                  >
+                    <div>
+                      <div
+                        class="flex items-center justify-between mb-spacing-xs"
+                      >
+                        <div class="flex items-center gap-2">
+                          <span
+                            class="w-2.5 h-2.5 rounded-full bg-secondary-container"
+                          ></span>
+                          <span
+                            class="font-title-md text-title-md font-bold text-on-surface"
+                            >General Awareness &amp; Static GK</span
+                          >
+                        </div>
+                        <span
+                          class="font-title-md text-title-md font-extrabold text-secondary"
+                          >25.0
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/50</span
+                          ></span
+                        >
+                      </div>
+                      <!-- Accuracy bar -->
+                      <div
+                        class="flex items-center justify-between font-label-xs text-label-xs mb-1"
+                      >
+                        <span class="text-on-surface-variant"
+                          >Sectional Accuracy</span
+                        >
+                        <span class="font-bold text-secondary">62%</span>
+                      </div>
+                      <div
+                        class="w-full bg-surface-container-high rounded-full h-1.5 mb-spacing-sm"
+                      >
+                        <div
+                          class="bg-secondary-container h-1.5 rounded-full"
+                          style="width: 62%"
+                        ></div>
+                      </div>
+                      <div
+                        class="flex flex-col gap-1.5 text-body-sm font-body-sm"
+                      >
+                        <div class="flex items-start gap-1.5">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-tertiary-container mt-0.5"
+                            >check_circle</span
+                          >
+                          <span class="text-on-surface-variant"
+                            ><strong class="text-on-surface">Good:</strong>
+                            Polity &amp; Indian Constitution</span
+                          >
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                          <span
+                            class="material-symbols-outlined text-[16px] text-secondary mt-0.5"
+                            >priority_high</span
+                          >
+                          <span class="text-on-surface-variant"
+                            ><strong class="text-secondary">Revise:</strong>
+                            Modern History &amp; Science</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mt-spacing-md pt-spacing-xs flex items-center justify-between"
+                    >
+                      <span
+                        class="font-label-xs text-label-xs font-bold text-secondary"
+                        >High Negative Mark Risk</span
+                      >
+                      <button
+                        class="px-2.5 py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-secondary font-label-md text-label-md font-bold shadow-sm transition-all flex items-center gap-1"
+                        type="button"
+                      >
+                        <span>GK Revision Capsule</span>
+                        <span class="material-symbols-outlined text-[14px]"
+                          >bolt</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Recent Mock Test Scorecards & TCS-iON History -->
+              <div
+                class="rounded-xl bg-surface-container-lowest shadow-sm p-spacing-lg"
+              >
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between gap-spacing-xs mb-spacing-md"
+                >
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <h2
+                        class="font-headline-sm text-headline-sm font-bold text-on-surface"
+                      >
+                        Recent Mock Test Analytics &amp; Solution Keys
+                      </h2>
+                      <span
+                        class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-xs text-label-xs uppercase font-bold"
+                        >TCS-iON Aligned</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Complete attempt breakdown with AI percentile distribution
+                    </p>
+                  </div>
+                  <a
+                    class="font-title-md text-title-md text-secondary hover:underline font-bold flex items-center gap-1"
+                    href="#"
+                  >
+                    <span>View All 42 Tests</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >chevron_right</span
+                    >
+                  </a>
+                </div>
+                <!-- Scorecard Item 1 -->
+                <div
+                  class="rounded-xl bg-surface-container-low p-spacing-md mb-spacing-sm hover:bg-surface-container transition-colors"
+                >
+                  <div
+                    class="flex flex-col lg:flex-row lg:items-center justify-between gap-spacing-sm"
+                  >
+                    <div class="flex flex-col gap-1">
+                      <div class="flex flex-wrap items-center gap-2">
+                        <span
+                          class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-xs text-label-xs font-bold"
+                          >Full Length</span
+                        >
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant"
+                          >Attempted Yesterday, 08:30 PM</span
+                        >
+                        <span
+                          class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-xs text-label-xs font-extrabold"
+                          >Qualified Cutoff</span
+                        >
+                      </div>
+                      <h3
+                        class="font-title-md text-title-md font-bold text-on-surface"
+                      >
+                        SSC CGL 2025 Tier-1 All India Mock #8
+                      </h3>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        100 Qs • Time taken: 54m 12s • Negative marks: -3.0
+                      </p>
+                    </div>
+                    <div
+                      class="flex flex-wrap items-center gap-spacing-md lg:gap-spacing-lg"
+                    >
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Score</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-on-surface"
+                          >156.5
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/ 200</span
+                          ></span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >AIR Rank</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-secondary"
+                          >312
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/ 12,400</span
+                          ></span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Accuracy</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-on-surface"
+                          >88.2%</span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Percentile</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-tertiary-container"
+                          >97.4%</span
+                        >
+                      </div>
+                      <button
+                        class="px-spacing-md py-spacing-xs rounded-xl bg-primary-container hover:bg-on-primary-fixed-variant text-on-primary font-title-md text-title-md font-bold transition-all shrink-0"
+                        type="button"
+                      >
+                        Solutions
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Scorecard Item 2 -->
+                <div
+                  class="rounded-xl bg-surface-container-low p-spacing-md mb-spacing-sm hover:bg-surface-container transition-colors"
+                >
+                  <div
+                    class="flex flex-col lg:flex-row lg:items-center justify-between gap-spacing-sm"
+                  >
+                    <div class="flex flex-col gap-1">
+                      <div class="flex flex-wrap items-center gap-2">
+                        <span
+                          class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-xs text-label-xs font-bold"
+                          >Quant Sectional</span
+                        >
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant"
+                          >18 March 2025</span
+                        >
+                      </div>
+                      <h3
+                        class="font-title-md text-title-md font-bold text-on-surface"
+                      >
+                        Quant Sectional Drill #34 (Trigonometry Focus)
+                      </h3>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        25 Qs • Time taken: 19m 04s
+                      </p>
+                    </div>
+                    <div
+                      class="flex flex-wrap items-center gap-spacing-md lg:gap-spacing-lg"
+                    >
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Score</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-on-surface"
+                          >45.0
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/ 50</span
+                          ></span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Rank</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-secondary"
+                          >84
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/ 3,200</span
+                          ></span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Accuracy</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-on-surface"
+                          >94.0%</span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Percentile</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-tertiary-container"
+                          >97.3%</span
+                        >
+                      </div>
+                      <button
+                        class="px-spacing-md py-spacing-xs rounded-xl bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-title-md text-title-md font-semibold transition-all shrink-0"
+                        type="button"
+                      >
+                        Analysis
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Scorecard Item 3 -->
+                <div
+                  class="rounded-xl bg-surface-container-low p-spacing-md mb-spacing-sm hover:bg-surface-container transition-colors"
+                >
+                  <div
+                    class="flex flex-col lg:flex-row lg:items-center justify-between gap-spacing-sm"
+                  >
+                    <div class="flex flex-col gap-1">
+                      <div class="flex flex-wrap items-center gap-2">
+                        <span
+                          class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-xs text-label-xs font-bold"
+                          >Reasoning Drill</span
+                        >
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant"
+                          >17 March 2025</span
+                        >
+                      </div>
+                      <h3
+                        class="font-title-md text-title-md font-bold text-on-surface"
+                      >
+                        Reasoning Sectional Speed Drill #29
+                      </h3>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        25 Qs • Time taken: 15m 48s
+                      </p>
+                    </div>
+                    <div
+                      class="flex flex-wrap items-center gap-spacing-md lg:gap-spacing-lg"
+                    >
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Score</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-on-surface"
+                          >48.0
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/ 50</span
+                          ></span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Rank</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-secondary"
+                          >42
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/ 2,900</span
+                          ></span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Accuracy</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-on-surface"
+                          >98.0%</span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Percentile</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-tertiary-container"
+                          >98.5%</span
+                        >
+                      </div>
+                      <button
+                        class="px-spacing-md py-spacing-xs rounded-xl bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-title-md text-title-md font-semibold transition-all shrink-0"
+                        type="button"
+                      >
+                        Analysis
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Scorecard Item 4 -->
+                <div
+                  class="rounded-xl bg-surface-container-low p-spacing-md hover:bg-surface-container transition-colors"
+                >
+                  <div
+                    class="flex flex-col lg:flex-row lg:items-center justify-between gap-spacing-sm"
+                  >
+                    <div class="flex flex-col gap-1">
+                      <div class="flex flex-wrap items-center gap-2">
+                        <span
+                          class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-xs text-label-xs font-bold"
+                          >Current Affairs</span
+                        >
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant"
+                          >16 March 2025</span
+                        >
+                      </div>
+                      <h3
+                        class="font-title-md text-title-md font-bold text-on-surface"
+                      >
+                        Current Affairs Weekly Booster (March Week 3)
+                      </h3>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        25 Qs • Time taken: 11m 20s
+                      </p>
+                    </div>
+                    <div
+                      class="flex flex-wrap items-center gap-spacing-md lg:gap-spacing-lg"
+                    >
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Score</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-on-surface"
+                          >22.0
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/ 25</span
+                          ></span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Rank</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-secondary"
+                          >110
+                          <span class="font-label-xs text-on-surface-variant"
+                            >/ 5,100</span
+                          ></span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Accuracy</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-on-surface"
+                          >88.0%</span
+                        >
+                      </div>
+                      <div class="flex flex-col">
+                        <span
+                          class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold"
+                          >Percentile</span
+                        >
+                        <span
+                          class="font-headline-sm text-headline-sm font-extrabold text-tertiary-container"
+                          >97.8%</span
+                        >
+                      </div>
+                      <button
+                        class="px-spacing-md py-spacing-xs rounded-xl bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-title-md text-title-md font-semibold transition-all shrink-0"
+                        type="button"
+                      >
+                        Review (3)
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Column: Aspirant Toolkit, Mistake Notebook & Leaderboard (4 Cols) -->
+            <div class="lg:col-span-4 flex flex-col gap-spacing-lg">
+              <!-- Aspirant Quick Tools Hub -->
+              <div
+                class="rounded-xl bg-surface-container-lowest shadow-sm p-spacing-md flex flex-col gap-spacing-sm"
+              >
+                <h2
+                  class="font-title-md text-title-md font-bold text-on-surface flex items-center justify-between"
+                >
+                  <span>Aspirant High-Impact Kit</span>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-on-surface-variant"
+                    >workspaces</span
+                  >
+                </h2>
+                <!-- Mistake Notebook Card -->
+                <div
+                  class="rounded-xl bg-secondary-fixed/40 p-spacing-sm flex items-start gap-spacing-sm"
+                >
+                  <div
+                    class="p-2 rounded-xl bg-secondary text-on-secondary shrink-0"
+                  >
+                    <span class="material-symbols-outlined text-[22px]"
+                      >auto_stories</span
+                    >
+                  </div>
+                  <div class="flex flex-col flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <h3
+                        class="font-title-md text-title-md font-bold text-on-surface truncate"
+                      >
+                        My Mistake Notebook
+                      </h3>
+                      <span
+                        class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary font-label-xs text-label-xs font-bold shrink-0"
+                        >38 Qs</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
+                    >
+                      24 Silly errors • 14 Conceptual gaps
+                    </p>
+                    <div class="mt-2 flex items-center gap-2">
+                      <button
+                        class="px-2.5 py-1 rounded-lg bg-surface-container-lowest hover:bg-white text-secondary font-label-md text-label-md font-bold shadow-sm transition-all"
+                        type="button"
+                      >
+                        Revise All 38 Qs
+                      </button>
+                      <button
+                        class="px-2 py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-xs text-label-xs font-bold"
+                        type="button"
+                      >
+                        Filter by Quant
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bookmarked Questions & Formulas -->
+                <div
+                  class="rounded-xl bg-surface-container-low p-spacing-sm flex items-start gap-spacing-sm hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <div
+                    class="p-2 rounded-xl bg-surface-container-highest text-on-surface shrink-0"
+                  >
+                    <span class="material-symbols-outlined text-[22px]"
+                      >bookmark</span
+                    >
+                  </div>
+                  <div class="flex flex-col flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <h3
+                        class="font-title-md text-title-md font-bold text-on-surface truncate"
+                      >
+                        Saved Questions &amp; Formulas
+                      </h3>
+                      <span
+                        class="font-label-md text-label-md font-bold text-on-surface"
+                        >124</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
+                    >
+                      Trig shortcuts, English idioms, Art &amp; Culture
+                      mnemonics
+                    </p>
+                  </div>
+                </div>
+                <!-- Downloaded Offline Kits -->
+                <div
+                  class="rounded-xl bg-surface-container-low p-spacing-sm flex items-start gap-spacing-sm hover:bg-surface-container transition-colors cursor-pointer"
+                >
+                  <div
+                    class="p-2 rounded-xl bg-surface-container-highest text-on-surface shrink-0"
+                  >
+                    <span class="material-symbols-outlined text-[22px]"
+                      >download_for_offline</span
+                    >
+                  </div>
+                  <div class="flex flex-col flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <h3
+                        class="font-title-md text-title-md font-bold text-on-surface truncate"
+                      >
+                        Downloaded Offline Kits
+                      </h3>
+                      <span
+                        class="font-label-md text-label-md font-bold text-tertiary-container"
+                        >5 PDFs</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
+                    >
+                      Budget 2025 Gist, Quant Formula Sheet, 2024 PYQ Set
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Live Topper Benchmark Comparison -->
+              <div
+                class="rounded-xl bg-surface-container-lowest shadow-sm p-spacing-md"
+              >
+                <div class="flex items-center justify-between mb-spacing-sm">
+                  <div class="flex flex-col">
+                    <h2
+                      class="font-title-md text-title-md font-bold text-on-surface"
+                    >
+                      Topper Benchmark (Mock #8)
+                    </h2>
+                    <span
+                      class="font-label-xs text-label-xs text-on-surface-variant"
+                      >Live gap analysis with AIR 1</span
+                    >
+                  </div>
+                  <span
+                    class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-xs text-label-xs font-bold"
+                    >AIR 1–10 Track</span
+                  >
+                </div>
+                <!-- Comparison Bars -->
+                <div class="flex flex-col gap-spacing-sm mt-spacing-xs">
+                  <!-- Overall Score Comparison -->
+                  <div class="flex flex-col gap-1">
+                    <div
+                      class="flex items-center justify-between font-label-xs text-label-xs"
+                    >
+                      <span class="text-on-surface-variant">Overall Marks</span>
+                      <span class="font-bold text-on-surface"
+                        >You: <strong class="text-secondary">156.5</strong> vs
+                        AIR 1:
+                        <strong class="text-primary-container"
+                          >184.0</strong
+                        ></span
+                      >
+                    </div>
+                    <div
+                      class="relative w-full bg-surface-container h-2 rounded-full overflow-hidden"
+                    >
+                      <!-- User Progress -->
+                      <div
+                        class="bg-secondary h-2 rounded-full absolute left-0 top-0"
+                        style="width: 78%"
+                      ></div>
+                      <!-- Marker for AIR 1 -->
+                      <div
+                        class="w-1.5 h-3 bg-primary-container absolute top-0 -mt-0.5"
+                        style="left: 92%"
+                        title="AIR 1 (184.0)"
+                      ></div>
+                    </div>
+                  </div>
+                  <!-- Accuracy Comparison -->
+                  <div class="flex flex-col gap-1">
+                    <div
+                      class="flex items-center justify-between font-label-xs text-label-xs"
+                    >
+                      <span class="text-on-surface-variant"
+                        >Question Accuracy</span
+                      >
+                      <span class="font-bold text-on-surface"
+                        >You: 88.2% vs AIR 1: 96.0%</span
+                      >
+                    </div>
+                    <div
+                      class="relative w-full bg-surface-container h-2 rounded-full overflow-hidden"
+                    >
+                      <div
+                        class="bg-tertiary-container h-2 rounded-full"
+                        style="width: 88.2%"
+                      ></div>
+                    </div>
+                  </div>
+                  <!-- Time Spent per Question -->
+                  <div class="flex flex-col gap-1">
+                    <div
+                      class="flex items-center justify-between font-label-xs text-label-xs"
+                    >
+                      <span class="text-on-surface-variant"
+                        >Speed (Time per Question)</span
+                      >
+                      <span class="font-bold text-on-surface"
+                        >You: 36s vs AIR 1: 31s</span
+                      >
+                    </div>
+                    <div
+                      class="relative w-full bg-surface-container h-2 rounded-full overflow-hidden"
+                    >
+                      <div
+                        class="bg-on-surface-variant h-2 rounded-full"
+                        style="width: 75%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Leaderboard Mini List -->
+                <div
+                  class="mt-spacing-md pt-spacing-sm border-t border-transparent flex flex-col gap-2"
+                >
+                  <span
+                    class="font-label-xs text-label-xs uppercase tracking-wider text-on-surface-variant font-bold"
+                    >Top Aspirants (Mock #8)</span
+                  >
+                  <div
+                    class="flex items-center justify-between p-1.5 rounded-lg bg-surface-container-low"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span
+                        class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary text-[10px] font-bold flex items-center justify-center"
+                        >1</span
+                      >
+                      <span
+                        class="font-label-md text-label-md font-bold text-on-surface truncate max-w-[110px]"
+                        >Priya Ranjan</span
+                      >
+                      <span
+                        class="font-label-xs text-label-xs text-on-surface-variant"
+                        >(Delhi)</span
+                      >
+                    </div>
+                    <span
+                      class="font-label-md text-label-md font-extrabold text-on-surface"
+                      >184.0 / 200</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center justify-between p-1.5 rounded-lg bg-surface-container-low"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span
+                        class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface text-[10px] font-bold flex items-center justify-center"
+                        >2</span
+                      >
+                      <span
+                        class="font-label-md text-label-md font-bold text-on-surface truncate max-w-[110px]"
+                        >Aman Verma</span
+                      >
+                      <span
+                        class="font-label-xs text-label-xs text-on-surface-variant"
+                        >(UP)</span
+                      >
+                    </div>
+                    <span
+                      class="font-label-md text-label-md font-extrabold text-on-surface"
+                      >181.5 / 200</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center justify-between p-1.5 rounded-lg bg-secondary-fixed/50"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span
+                        class="w-5 h-5 rounded-full bg-secondary text-on-secondary text-[10px] font-bold flex items-center justify-center"
+                        >312</span
+                      >
+                      <span
+                        class="font-label-md text-label-md font-bold text-on-surface truncate max-w-[110px]"
+                        >You (Ankit S.)</span
+                      >
+                      <span
+                        class="font-label-xs text-label-xs text-secondary font-bold"
+                        >(Top 2.5%)</span
+                      >
+                    </div>
+                    <span
+                      class="font-label-md text-label-md font-extrabold text-secondary"
+                      >156.5 / 200</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Aspirant Mentor / Exam Day Tip Widget -->
+              <div
+                class="rounded-xl bg-primary-container text-on-primary p-spacing-md shadow-sm relative overflow-hidden"
+              >
+                <div class="flex items-center gap-2 mb-2">
+                  <span
+                    class="material-symbols-outlined text-[20px] text-tertiary-fixed"
+                    >psychology</span
+                  >
+                  <span
+                    class="font-label-xs text-label-xs uppercase tracking-wider font-extrabold text-tertiary-fixed"
+                    >Daily Strategy Byte</span
+                  >
+                </div>
+                <h4
+                  class="font-title-md text-title-md font-bold text-on-primary"
+                >
+                  Avoid "Negative Marking Spiral" in GS
+                </h4>
+                <p
+                  class="font-body-sm text-body-sm text-on-primary-container mt-1"
+                >
+                  Your analysis shows 6 attempted questions in Static GK with
+                  &lt;40% certainty resulted in -3.00 marks deduction. Skip
+                  ambiguous dates &amp; dynasties in Round 1.
+                </p>
+                <div class="mt-3 flex items-center justify-between">
+                  <span class="font-label-xs text-label-xs text-inverse-primary"
+                    >By AIR 1 Mentor Team</span
+                  >
+                  <button
+                    class="font-label-md text-label-md text-tertiary-fixed hover:underline font-bold"
+                    type="button"
+                  >
+                    Read 2-Min Protocol →
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bottom Aspirant Quick-Start Banner -->
+        <section
+          class="w-full px-gutter-desktop max-w-[80rem] mx-auto py-spacing-md mb-spacing-lg"
+        >
+          <div
+            class="rounded-xl bg-surface-container-low p-spacing-md flex flex-col md:flex-row items-center justify-between gap-spacing-md"
+          >
+            <div class="flex items-center gap-spacing-sm">
+              <div
+                class="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shrink-0"
+              >
+                <span class="material-symbols-outlined text-[28px]"
+                  >devices</span
+                >
+              </div>
+              <div class="flex flex-col">
+                <h3
+                  class="font-title-md text-title-md font-bold text-on-surface"
+                >
+                  Experience Real TCS-iON CBT Exam Interface
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Switch into full-screen lock mode with official virtual
+                  calculator and bilingual toggle
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-spacing-xs shrink-0 w-full md:w-auto"
+            >
+              <button
+                class="w-full md:w-auto px-spacing-md py-spacing-xs rounded-xl bg-primary-container hover:bg-black text-on-primary font-title-md text-title-md font-bold transition-all shadow-md active:scale-95 flex items-center justify-center gap-2"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >open_in_full</span
+                >
+                Launch TCS-iON CBT Simulator
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script>
+        // Lightweight client interaction for interactive study checklist and quick metrics
+        document.addEventListener("DOMContentLoaded", () => {
+          // Quick interactivity feedback for checklist actions
+          const checkButtons = document.querySelectorAll("button");
+          checkButtons.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+              // Prevent default navigation if hash or dummy link
+              if (
+                btn.closest("a") &&
+                btn.closest("a").getAttribute("href") === "#"
+              ) {
+                e.preventDefault();
+              }
+            });
+          });
+        });
+      </script>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] mt-spacing-2xl"
+    >
+      <div class="max-w-[80rem] mx-auto px-gutter-desktop py-spacing-2xl">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-spacing-xl mb-spacing-2xl"
+        >
+          <div class="lg:col-span-2 flex flex-col gap-spacing-md">
+            <div class="flex items-center gap-spacing-xs">
+              <img
+                alt="CrackGov2 Brand Logo"
+                class="h-8 w-auto object-contain"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-NaXyBDuQ6-DKBjsUJUHFLGXB-oVlrUJqzC-uwAt1WDPL6dSSvz1ZPhoo9FGF9_Ej8aGR8beVxpgQ5yT_KryvYGgGRYgnEW7Hbm9U0mXmlg2yjqOr3N08cRAXeByCCeCwlQfU_dRxddjecRcQ6gr0Y5x1J4Ooq02ecp32WWcaVlPFCj21eNusskhpY6kE89I0aWGgplWvAesIfcyt4sOBM-qF01a66G5VJBR8RxjEx89DyrYXlMPK"
+              /><span
+                class="font-headline-sm text-headline-sm font-extrabold text-on-surface tracking-tight"
+                >CrackGov<span class="text-secondary">2</span></span
+              >
+            </div>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-sm"
+            >
+              India's foremost online test prep institute engineered for
+              absolute exam mastery. Real-time TCS-iON simulations, AI-driven
+              percentile analytics, and verified toppers' test tracks.
+            </p>
+            <div class="flex flex-wrap items-center gap-spacing-sm">
+              <div
+                class="flex items-center gap-2 px-spacing-sm py-spacing-xs rounded-xl bg-surface-container text-on-surface"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary text-[20px]"
+                  >support_agent</span
+                >
+                <div class="flex flex-col text-left leading-tight">
+                  <span
+                    class="font-label-xs text-label-xs uppercase font-bold text-on-surface-variant"
+                    >24/7 Aspirant Helpline</span
+                  ><span
+                    class="font-title-md text-title-md font-extrabold text-on-surface"
+                    >1800-420-GOV2</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-2 px-spacing-sm py-spacing-xs rounded-xl bg-surface-container text-on-surface"
+              >
+                <span
+                  class="material-symbols-outlined text-tertiary-container text-[20px]"
+                  >verified_user</span
+                >
+                <div class="flex flex-col text-left leading-tight">
+                  <span
+                    class="font-label-xs text-label-xs uppercase font-bold text-on-surface-variant"
+                    >Payment Trust</span
+                  ><span
+                    class="font-label-md text-label-md font-bold text-on-surface"
+                    >Razorpay 256-bit Secure</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-spacing-sm">
+            <h4
+              class="font-headline-sm text-headline-sm font-bold text-on-surface text-[18px]"
+            >
+              Popular Test Series
+            </h4>
+            <ul class="flex flex-col gap-spacing-xs">
+              <li
+                class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+              >
+                SSC CGL Tier I &amp; II
+              </li>
+              <li
+                class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+              >
+                SBI PO &amp; Clerk Prelims
+              </li>
+              <li
+                class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+              >
+                UPSC Civil Services Prelims
+              </li>
+              <li
+                class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+              >
+                RRB NTPC CBT 1 &amp; 2
+              </li>
+              <li
+                class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+              >
+                NDA / CDS Combined
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-spacing-sm">
+            <h4
+              class="font-headline-sm text-headline-sm font-bold text-on-surface text-[18px]"
+            >
+              Syllabus &amp; Material
+            </h4>
+            <ul class="flex flex-col gap-spacing-xs">
+              <li
+                class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+              >
+                Daily Current Affairs PDF
+              </li>
+              <li
+                class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+              >
+                Previous Year Papers (PYQ)
+              </li>
+              <li
+                class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+              >
+                Quantitative Formula Sheets
+              </li>
+              <li
+                class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+              >
+                NCERT Gist Notes (6-12)
+              </li>
+              <li
+                class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+              >
+                Exam Notification Radar
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-spacing-sm">
+            <h4
+              class="font-headline-sm text-headline-sm font-bold text-on-surface text-[18px]"
+            >
+              Experience App
+            </h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              Download our high-performance mobile app for seamless offline mock
+              attempts &amp; speed analytics.
+            </p>
+            <div class="flex flex-col gap-spacing-xs">
+              <div
+                class="flex items-center gap-3 p-spacing-xs rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer"
+              >
+                <span class="material-symbols-outlined text-[24px]"
+                  >android</span
+                >
+                <div class="text-left leading-tight">
+                  <div
+                    class="font-label-xs text-label-xs text-on-surface-variant"
+                  >
+                    Get it on
+                  </div>
+                  <div class="font-title-md text-title-md font-bold">
+                    Google Play Store
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-3 p-spacing-xs rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors cursor-pointer"
+              >
+                <span class="material-symbols-outlined text-[24px]"
+                  >phone_iphone</span
+                >
+                <div class="text-left leading-tight">
+                  <div
+                    class="font-label-xs text-label-xs text-on-surface-variant"
+                  >
+                    Available on
+                  </div>
+                  <div class="font-title-md text-title-md font-bold">
+                    Apple App Store
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-spacing-lg border-t-0 flex flex-col md:flex-row items-center justify-between gap-spacing-md text-center md:text-left"
+        >
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            © 2025 CrackGov2 EdTech Private Limited. All rights reserved.
+            TCS-iON is a registered trademark of Tata Consultancy Services Ltd.
+          </p>
+          <div class="flex items-center gap-spacing-md">
+            <span
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface cursor-pointer"
+              >Privacy Policy</span
+            ><span
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface cursor-pointer"
+              >Terms of Exam</span
+            ><span
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface cursor-pointer"
+              >Refund Policy</span
+            ><span
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface cursor-pointer"
+              >Honor Code</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
